@@ -3,9 +3,11 @@ package App;
 public class PalindroneCheckerApp {
     public static void main(String[] args) 
     {
-        String word = "madam";
-        boolean isPalindrome = isPalindrome(word);
-        System.out.println(word + " is a palindrome: " + isPalindrome);
+        String[] words = {"madam", "racecar", "hello", "A man, a plan, a canal: Panama"};
+        for (String word : words) {
+            boolean isPalindrome = isPalindrome(word);
+            System.out.println(word + " is a palindrome: " + isPalindrome);
+        }
     }
 
     public static boolean isPalindrome(String str) 
